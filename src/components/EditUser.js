@@ -38,10 +38,6 @@ const EditUser = () => {
 
   const updateUser = async (e) => {
     e.preventDefault();
-    if (!name || !sector || !term) {
-      alert("Please fill in all required fields and agree to the terms.");
-      return;
-    }
     try {
       await axios.patch(
         `https://apiuserbackend-vercel.vercel.app/users/${id}`,
