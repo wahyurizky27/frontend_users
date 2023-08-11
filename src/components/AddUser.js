@@ -28,7 +28,7 @@ const AddUser = () => {
 
   const saveUser = async (e) => {
     e.preventDefault();
-    if (!name || !sector || !term) {
+    if (!name || !sector) {
       alert("Please fill in all required fields and agree to the terms.");
       return;
     }
