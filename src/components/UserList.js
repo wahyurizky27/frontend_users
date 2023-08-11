@@ -9,7 +9,7 @@ const UserList = () => {
     getUsers();
   }, []);
 
-  axios.defaults.withCredentials = true;
+  // axios.defaults.withCredentials = true;
 
   const getUsers = async () => {
     const response = await axios.get(
